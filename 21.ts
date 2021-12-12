@@ -77,4 +77,3 @@ const losses = poss.map(([g, d, a]) => player(g, d, a)).filter((pp) =>
   !battle(pp, boss())
 );
 p(losses.reduce((acc, x) => acc.gold < x.gold ? x : acc));
-
